@@ -1,0 +1,5 @@
+This file implements a simpler version of the K-means clustering algorithm, typically used for
+organizing data into clusters. This version is implemented for two-dimensional points. 
+The algorithm assigns each point to the nearest centroid, then updates the centroids based on the 
+assigned points, then repeats untill no significant changes have occured. 
+The file also features some test files and a simple visualization of the clustering process. 

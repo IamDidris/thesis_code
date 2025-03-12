@@ -1,0 +1,9 @@
+These files provide key functions for multi-channel filtering and OFDM-based signal processing in a software-defined
+radio environment. The firpfbch family (firpfbch.proto.c, firpfbch_cccf.c, firpfbch_crcf.c) 
+implements polyphase filterbank channelizers (FIRPFBCH), splitting an input into multiple channels or combining 
+multiple channels into one. Variations like firpfbch2.proto.c offer half-sized block processing, 
+while firpfbchr.proto.c supports rational decimation. For OFDM, ofdmframe.common.c provides helper routines and 
+subcarrier management, ofdmframegen.c handles frame generation (pilot placement, training sequences, and IFFT 
+operations), and ofdmframesync.c manages synchronization, channel estimation, and demodulation (detecting S0/S1, 
+applying FFT, correcting offsets). Finally, reference_multichannel.txt briefly notes how these modules form a 
+robust DSP library for software-defined radios.

@@ -1,0 +1,2 @@
+The employee management system is a basic console application in C++ used to manage a list of employees. The user
+is able to build different tables with a max size of 20 employees. The user can insert new employees, delete and search within the program. 
