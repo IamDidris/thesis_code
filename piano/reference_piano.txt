@@ -1,0 +1,7 @@
+The piano.c file contains a emulation of a piano, utilizing the PortAudio library for output and 
+the X11 library for capturing keyboard events. The program loads 16bit stereo wav files and 
+initializes them to correspond with each note on the piano. Each note can be both pressed or 
+released, the notes transition between a "pressed state" and "fading state" where volume gradually
+lowers over time. The program features a graphical interface where the pressed notes are displayed,
+the user is also able to shift octaves utilzing the shift or control key. The notes played are 
+mixed in an output buffer, allowing notes to play simultaniously without overloading. 
