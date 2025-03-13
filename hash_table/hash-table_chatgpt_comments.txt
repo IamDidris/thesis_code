@@ -1,0 +1,23 @@
+The provided code implements a hash table (or hash map) in C, allowing efficient storage and retrieval of key-value pairs. The implementation consists of two files: hash-table.h (header file) and hash-table.c (source file).
+
+Overview
+The hash table structure (HashTable) contains an array of linked lists (buckets) that store key-value pairs (HashTablePair). It uses a hash function to compute an index for each key, which determines where the value should be stored. If multiple keys hash to the same index, they are handled using chaining with linked lists.
+
+Key Features
+Creation and Deletion
+
+hash_table_new() initializes a new hash table with a given hash and equality function.
+hash_table_free() deallocates memory, including all stored keys and values.
+Insertion & Deletion
+
+hash_table_insert() adds a key-value pair, handling collisions by chaining.
+hash_table_remove() deletes an entry while preserving list integrity.
+Lookup & Iteration
+
+hash_table_lookup() retrieves a value based on a given key.
+hash_table_iterate() allows traversal of all entries using an iterator.
+Resizing & Optimization
+
+The table dynamically resizes when the load factor exceeds a threshold, reducing collisions and improving performance.
+It uses a list of prime numbers to determine optimal sizes for resizing.
+This implementation is flexible, supporting user-defined hash functions and memory management for keys and values. It is a general-purpose hash table, suitable for various applications requiring fast key-value storage.

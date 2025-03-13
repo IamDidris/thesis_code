@@ -1,0 +1,19 @@
+The provided code files are part of a software-defined radio (SDR) library that implements finite impulse response (FIR) polyphase filterbanks and orthogonal frequency-division multiplexing (OFDM) functionalities.
+
+FIR Polyphase Filterbank Channelizer (FIRPFBCH)
+The firpfbch (Finite Impulse Response Polyphase Filterbank Channelizer) files define a filterbank structure used for efficient multichannel signal processing. The code implements both analysis (channelization) and synthesis (reconstruction) modes, supporting complex and real signal processing. It leverages fast Fourier transforms (FFT) for efficient frequency-domain filtering. Variants include:
+
+firpfbch.proto.c: Provides a generic FIR filterbank channelizer with FFT-based processing.
+firpfbch_cccf.c & firpfbch_crcf.c: Implementations for complex and real-valued signals.
+firpfbch2.proto.c & firpfbchr.proto.c: Extended filterbank channelizers with different output rates for resampling.
+These implementations efficiently split wideband signals into multiple subbands and reconstruct them using a polyphase approach, which minimizes computational overhead.
+
+OFDM Frame Processing
+The ofdmframe files handle the generation and synchronization of OFDM signals, commonly used in wireless communications:
+
+ofdmframe.common.c: Provides shared utilities for OFDM frame generation and synchronization, including subcarrier allocation and sequence generation.
+ofdmframegen.c: Implements an OFDM frame generator, constructing OFDM symbols with cyclic prefixes and pilot signals.
+ofdmframesync.c: Implements OFDM frame synchronization, detecting incoming OFDM signals, estimating carrier offsets, and aligning signals for demodulation.
+These files ensure robust OFDM communication by accurately generating and synchronizing signals while minimizing errors due to frequency and timing shifts.
+
+In summary, the codebase is focused on efficient multichannel filtering and OFDM processing for SDR applications, leveraging FFT-based techniques for computational efficiency.

@@ -1,0 +1,14 @@
+The provided C program implements Non-Preemptive Priority Scheduling, a scheduling algorithm where processes are executed based on priority. The highest-priority process runs first, and once a process starts execution, it cannot be interrupted until completion.
+
+Overview:
+Process Management: A linked list structure (node) is used to store process details like ID, arrival time, burst time, priority, completion time, turnaround time, and waiting time.
+Queue Operations: Functions allow inserting (insert), deleting (delete), and displaying (show_list) processes in the queue.
+Scheduling Execution:
+Processes are sorted by arrival time and priority.
+The process with the highest priority (lowest numerical value) executes first.
+Completion time (CT), turnaround time (TAT), and waiting time (WT) are updated dynamically.
+The average values for completion, turnaround, and waiting times are computed (calculate_ct, calculate_tat, calculate_wt).
+Additional Features:
+Self-Test Function (test): A predefined set of processes is inserted, scheduled, and verified using assertions.
+Main Function (main): Calls the test() function to validate scheduling logic.
+This program effectively models non-preemptive priority scheduling using a linked list, calculating key scheduling metrics while ensuring correctness through self-tests.
