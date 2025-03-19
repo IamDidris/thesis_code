@@ -1,0 +1,14 @@
+The provided code consists of two files: chap06.h and web_get.c. Together, they implement a simple HTTP client that fetches web pages using raw sockets.
+
+Overview:
+The chap06.h file contains platform-specific socket handling definitions for both Windows and Unix-like systems. It includes necessary networking headers and defines helper macros for socket operations, ensuring cross-platform compatibility.
+
+The web_get.c file implements the main functionality of the HTTP client. It takes a URL as input, parses it to extract the hostname, port, and path, then establishes a connection to the web server. It constructs and sends a basic HTTP GET request, waits for the response, and prints the received headers and body to the console.
+
+Key Steps:
+URL Parsing: The parse_url() function extracts the hostname, port (defaulting to 80 for HTTP), and path from the provided URL.
+Socket Connection: connect_to_host() resolves the hostname, creates a TCP socket, and connects to the server.
+Request Sending: send_request() formats an HTTP request and transmits it.
+Response Handling: The program reads and processes the server's response, managing different content transfer encodings (Content-Length, Chunked, or Connection-based).
+Timeout & Buffer Management: A timeout mechanism ensures that the request does not hang indefinitely, and buffer limits prevent memory issues.
+This code provides a minimalistic yet functional HTTP client, primarily for educational or debugging purposes.
