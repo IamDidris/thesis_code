@@ -1,0 +1,23 @@
+The provided C implementation defines an AVL tree, a self-balancing binary search tree that ensures efficient search, insertion, and deletion operations. The code is split into a header file (avl-tree.h) and a source file (avl-tree.c).
+
+Overview of Functionality
+Tree and Node Structure:
+
+The tree (AVLTree) maintains a root node, a function pointer for key comparison, and a count of nodes.
+Each node (AVLTreeNode) stores a key, value, parent, child pointers, and height for balancing.
+Core Operations:
+
+Creation & Deletion: avl_tree_new() initializes an empty tree, and avl_tree_free() recursively frees all nodes.
+Insertion: avl_tree_insert() adds a new node while maintaining AVL balance via rotations.
+Deletion: avl_tree_remove() removes a node, rebalancing the tree if necessary.
+Lookup: avl_tree_lookup() searches for a node by key.
+Traversal: avl_tree_to_array() converts the tree into an ordered array.
+Balancing Mechanism:
+
+Height Management: avl_tree_update_height() updates node heights based on children.
+Rotations: avl_tree_rotate() performs left or right rotations.
+Balance Adjustments: avl_tree_node_balance() ensures AVL property by applying rotations when needed.
+How It Works
+The tree maintains balance by ensuring that the height difference between left and right subtrees never exceeds 1. When an imbalance is detected after an insert or delete operation, rotations are applied to restore balance. This guarantees logarithmic time complexity for search, insert, and delete operations.
+
+This implementation provides a generic AVL tree structure using void pointers for keys and values, making it adaptable for various data types.
