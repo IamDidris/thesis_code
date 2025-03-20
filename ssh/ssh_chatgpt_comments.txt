@@ -1,0 +1,13 @@
+The provided code files are related to handling SSH (Secure Shell) connections using the libssh library. Below is a summary of each file:
+
+ssh_auth.c: This program establishes an SSH connection to a specified host using a given username and port. It checks the server's public key, verifies if the server is a known host, and prompts the user to accept it if it's unknown. The user is then asked for a password to authenticate. If authentication is successful, the connection is closed gracefully.
+
+ssh_command.c: This program extends SSH authentication by allowing the execution of a remote command. After establishing a connection and verifying the server, the user is authenticated. It then prompts the user for a command, executes it on the remote server, and prints the output before closing the session.
+
+ssh_connect.c: This is a basic SSH connection test utility. It connects to a given SSH server on a specified port, retrieves and displays the server’s banner, and then disconnects. It does not perform authentication or command execution.
+
+ssh_download.c: This script facilitates downloading a file from a remote server using SCP (Secure Copy Protocol) over SSH. After establishing and authenticating the SSH session, it prompts the user for a filename, retrieves the file, and displays its contents before closing the connection.
+
+ssh_version.c: A simple utility that prints the installed libssh version, ensuring that the library is available and functional.
+
+chap11.h: This header file includes standard C libraries and libssh.h, likely providing common definitions and functionalities used across the other files.

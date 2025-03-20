@@ -1,0 +1,26 @@
+The provided code implements a trie (prefix tree) data structure in C, which allows fast mapping of strings (or binary keys) to associated values. The trie supports insertion, lookup, and deletion of key-value pairs efficiently.
+
+The implementation defines a Trie structure that holds a root node, and each node (TrieNode) maintains a value, a usage count, and an array of 256 pointers to child nodes, representing all possible byte values.
+
+Key Functionalities:
+Creation & Deletion:
+
+trie_new() initializes a new trie.
+trie_free() recursively deallocates all nodes.
+Insertion:
+
+trie_insert() inserts a string key and its associated value.
+trie_insert_binary() does the same for binary keys.
+If a key already exists, its value is updated.
+Lookup:
+
+trie_lookup() retrieves the value associated with a string key.
+trie_lookup_binary() does the same for binary keys.
+Deletion:
+
+trie_remove() removes a key and reclaims memory if no other keys share its nodes.
+trie_remove_binary() is its counterpart for binary keys.
+Utility:
+
+trie_num_entries() returns the total number of stored entries.
+The code ensures memory efficiency by freeing unused nodes when keys are deleted. It also includes rollback mechanisms to handle failed memory allocations during insertion. This trie implementation is useful for applications requiring fast prefix-based lookups, such as dictionaries, auto-completion, or routing tables.
