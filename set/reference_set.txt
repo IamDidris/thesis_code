@@ -1,8 +1,1 @@
-The set.c & set.h file feature an implemetation of the hash-based set data structure written in C. 
-The set is a data structure stores a collection of values, but each value is unique and the set 
-thus has no duplicate entries. The program features a wide range of functionality for creating
-new sets, insertion of values, deletion of values, and searching for values. 
-The program is also able to iterate over all values in the set, or find the number of entries 
-in a set. 
-The program also features two unique functions where the user can combine two sets, producing
-the union of those two sets, or generate a set based on the intersection between two sets. 
+The set.c & set.h file feature an implemetation of the hash-based set data structure written in C.  The set is a data structure stores a collection of values, but each value is unique and the set  thus has no duplicate entries. The program features a wide range of functionality for creating new sets, insertion of values, deletion of values, and searching for values.  The program is also able to iterate over all values in the set, or find the number of entries  in a set.  The program also features two unique functions where the user can combine two sets, producing the union of those two sets, or generate a set based on the intersection between two sets. 

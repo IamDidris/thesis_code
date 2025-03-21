@@ -1,5 +1,1 @@
-Naval_battle.c implements the classic naval battle board game in a command line interface. 
-The game is played on a 10x10 grid and the positions of the boats are validated as not to overlap
-with one another. The players take time shooting at the other players board, until all the 
-opposing players boats have been sunk. The program keeps track of the users scores, and the game
-ends when one players boats are destroyed or a fixed number of rounds have been played. 
+Naval_battle.c implements the classic naval battle board game in a command line interface.  The game is played on a 10x10 grid and the positions of the boats are validated as not to overlap with one another. The players take time shooting at the other players board, until all the  opposing players boats have been sunk. The program keeps track of the users scores, and the game ends when one players boats are destroyed or a fixed number of rounds have been played.  

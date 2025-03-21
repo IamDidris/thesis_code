@@ -1,8 +1,1 @@
-The AStar file implements the A* Algorithm, which is an algorithm that utilizes a heuristic
-approach to find the shortest path between two nodes in a graph. While there are unvisited nodes
-and the goal has not been reached, the node with the lowest cost is retrieved from the open
-set and added to the closed set. For each neighboring node, the cost to reach each neighbor is 
-calculated and if a cheaper path is found, the neighboring nodes value is updated. If a neighbor 
-is not present in the open or closed set, it is added to the open set. Once the goal is reache,
-the path is reconstructed backtracking from the goal node to the start node utilizing parent 
-pointers that are stored in each node. 
+The AStar file implements the A* Algorithm, which is an algorithm that utilizes a heuristic approach to find the shortest path between two nodes in a graph. While there are unvisited nodes and the goal has not been reached, the node with the lowest cost is retrieved from the open set and added to the closed set. For each neighboring node, the cost to reach each neighbor is  calculated and if a cheaper path is found, the neighboring nodes value is updated. If a neighbor  is not present in the open or closed set, it is added to the open set. Once the goal is reache, the path is reconstructed backtracking from the goal node to the start node utilizing parent  pointers that are stored in each node. 

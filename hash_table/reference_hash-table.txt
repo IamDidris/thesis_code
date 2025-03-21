@@ -1,6 +1,1 @@
-The hast_table.c &.h file, implement the hash table data structure. 
-This is structure maps keys to values and utilizes separate chaining
-to handle collisions. The user is able to insert values into the table, 
-if the table is getting too full, it is resized by picking the next prime
-size and rehashing all of the entries. The user is also able to search 
-for values within the table and delete entries. 
+The hast_table.c &.h file, implement the hash table data structure.  This is structure maps keys to values and utilizes separate chaining to handle collisions. The user is able to insert values into the table,  if the table is getting too full, it is resized by picking the next prime size and rehashing all of the entries. The user is also able to search  for values within the table and delete entries. 

@@ -1,11 +1,1 @@
-These files comprise a simple Pascal parser implemented in C, divided into several components to handle different parts of the compilation process. The main entry point is in Driver.c, which handles the overall parsing flow.
-
-Keytoktab provides functionality for translating between lexemes and tokens, recognizing keywords, and mapping tokens back to their corresponding strings.
-
-Lexer.c manages the input buffer, analyzing its contents and using Keytoktab to convert character sequences into recognized tokens.
-
-Optab.c maintains the operator table, defining how operations such as addition, subtraction, and multiplication are evaluated and what values they return.
-
-Symtab.c contains the symbol table, which tracks program names, variable identifiers, their data types, and sizes.
-
-Finally, Parser.c uses a recursive descent strategy to interpret the Pascal program, examining the stream of tokens to enforce grammar rules and either build or validate the structure of the code.
+These files comprise a simple Pascal parser implemented in C, divided into several components to handle different parts of the compilation process. The main entry point is in Driver.c, which handles the overall parsing flow.  Keytoktab provides functionality for translating between lexemes and tokens, recognizing keywords, and mapping tokens back to their corresponding strings.  Lexer.c manages the input buffer, analyzing its contents and using Keytoktab to convert character sequences into recognized tokens.  Optab.c maintains the operator table, defining how operations such as addition, subtraction, and multiplication are evaluated and what values they return.  Symtab.c contains the symbol table, which tracks program names, variable identifiers, their data types, and sizes.  Finally, Parser.c uses a recursive descent strategy to interpret the Pascal program, examining the stream of tokens to enforce grammar rules and either build or validate the structure of the code.
