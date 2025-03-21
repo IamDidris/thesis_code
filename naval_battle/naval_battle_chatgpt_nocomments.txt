@@ -1,0 +1,9 @@
+This C program is a two-player text-based implementation of the classic game Battleship. The game operates on a 10x10 grid for each player, where they strategically place boats of varying sizes and take turns attempting to sink each other’s fleet.
+
+At the beginning, each player is prompted to position boats of three sizes—1, 2, and 3 units long—in specific quantities (6, 4, and 2 respectively). Boat placement is validated for proper orientation (horizontal or vertical), space availability, and boundary limits. A surrounding buffer zone is marked to prevent overlapping or adjacent boat placement.
+
+Gameplay consists of up to 40 alternating turns where each player selects a grid coordinate to fire upon. The code checks if the shot is valid, updates the grid accordingly, and determines whether a boat has been fully sunk. Scoring is based on successful hits and completed boat eliminations, with different point values depending on boat size.
+
+The game logic includes utility functions for board visualization, input validation, hit/miss handling, and score tracking. It ends by displaying the final score and declaring the game over.
+
+Overall, the program emphasizes structured gameplay flow, input feedback, and grid-based visual output, encapsulating a complete, console-based Battleship experience.

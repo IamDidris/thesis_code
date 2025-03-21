@@ -1,0 +1,9 @@
+This C program implements a non-preemptive priority scheduling algorithm for simulating CPU process scheduling. It uses a linked list to manage a queue of processes, each with attributes like arrival time (AT), burst time (BT), and priority. The program's goal is to calculate key scheduling metrics such as completion time (CT), turnaround time (TAT), and waiting time (WT) for a set of processes, and then compute their averages.
+
+Processes are inserted into a linked list, and the scheduling begins by selecting the process with the highest priority (lower numerical value) among those that have arrived. Once selected, a process runs to completion (non-preemptively), and its CT is updated. This continues until all processes are completed. The program ensures correct handling by copying the original list and processing from this duplicate.
+
+After CTs are calculated, TATs are derived by subtracting the arrival time from the completion time, and WTs are then calculated as the difference between TAT and burst time.
+
+The test function inserts five sample processes and runs the scheduler, asserting that the average CT, TAT, and WT match expected values. It concludes with a success message if all calculations are correct.
+
+Overall, this code provides a clean and functional demonstration of non-preemptive priority scheduling, emphasizing correct ordering based on arrival time and priority, while calculating all essential scheduling metrics.

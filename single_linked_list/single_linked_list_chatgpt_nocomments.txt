@@ -1,0 +1,11 @@
+This code implements a singly linked list (slist) data structure in C, offering a set of functions for managing and manipulating linear collections of data. It allows for dynamically storing, retrieving, modifying, and deleting data nodes in a flexible and efficient way.
+
+The list is composed of nodes (SListEntry), each storing a data value and a pointer to the next node. The core operations include adding nodes to the front (slist_prepend) or back (slist_append) of the list, removing nodes by reference (slist_remove_entry) or by value with a matching function (slist_remove_data), and accessing data at specific positions (slist_nth_data).
+
+Memory management is handled explicitly, with slist_free deallocating the entire list, and internal use of malloc and free to allocate and release individual nodes. The code also includes utilities to get the list length, convert it to an array, and search for elements (slist_find_data).
+
+For sorting, the list uses a recursive quicksort-style function (slist_sort_internal) that partitions elements around a pivot and recursively sorts sublists, utilizing user-provided comparison functions.
+
+An iterator interface (SListIterator) is also included, enabling safe traversal and optional removal of elements during iteration.
+
+Overall, this code provides a general-purpose, flexible implementation of a singly linked list suitable for C programs requiring dynamic linear data structures.
