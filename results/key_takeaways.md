@@ -1,4 +1,6 @@
 # Results
+
+## Håkon - Thoughts
  - The AI generated descriptions with comments generally produced a higher score relative to the reference text, but by a very small margin compared to the code description generated without comments. 
 
  - When manually reading the texts, both me and Felix generally prefer the description generated without comments due to it being more easily readable, and had more of a "flowy" style to it, not jumping to much between segments. The code descriptions generated with comments are however more detailed when it comes to functionality, so theres a tradeoff. 
@@ -10,3 +12,6 @@
 - According to specifications by our supervisors, the code description was meant to be high level and thus this was included within the prompt. The code description generated with comments generally went more in depth than the code description generated without comments.
 
 - The AI model struggled with producing code descriptions under the word limitation imposed upon it. When presented with larger code bases such as the quantization library and the multichannel library, it took several tries before the models eventually produced a more "high-level" description which thus made the output stay within the token length. 
+
+## Felix - Thoughts
+- 
