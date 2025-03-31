@@ -13,5 +13,7 @@
 
 - The AI model struggled with producing code descriptions under the word limitation imposed upon it. When presented with larger code bases such as the quantization library and the multichannel library, it took several tries before the models eventually produced a more "high-level" description which thus made the output stay within the token length. 
 
+- The AI models do not introduce information that is not present in the code and do not introduce any ambiguity, the descriptions are high quality and could in our opinion, be utilized to generate documentation in codebases. 
+
 ## Felix - Thoughts
 - 
