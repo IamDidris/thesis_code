@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 # ✅ Use raw string for Windows paths to avoid issues with backslashes
-data_dir = Path(r"C:\Users\Håkon Paulsrud\Desktop\results")  # <-- Make sure this folder exists
+data_dir = Path(r"C:\Users\Håkon Paulsrud\Desktop\results")  
 output_file = data_dir / "combined_tables.xlsx"
 
 # Rename mapping
