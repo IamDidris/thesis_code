@@ -1,14 +1,1 @@
-The provided C program implements a simple Bus Reservation System that allows users to log in and manage bus ticket bookings. 
-The system supports user authentication, ticket booking, cancellation, and bus status inquiries.  
-How It Works: User Authentication:  Users must log in with predefined credentials stored in an array of User structures. 
-If login credentials match, the user gains access; otherwise, access is denied. 
-Bus Data Management:  Bus details (bus number, source, destination, total and available seats, fare) are stored in an array of Bus structures. 
-The system supports multiple buses with predefined data. 
-Main Features:  Booking a Ticket: Users can book tickets by entering a bus number and specifying the number of seats. 
-If enough seats are available, they are reserved. 
-Canceling a Ticket: Users can cancel previously booked tickets, ensuring they do not cancel more than they originally booked. 
-Checking Bus Status: Displays details such as the route, available seats, and fare of a selected bus. 
-Menu System:  The program operates through a looped menu system that presents different options depending on whether a user is logged in. 
-Users can book, cancel, check status, or log out. The program is structured using functions for modularity, making it easy to navigate and expand. 
-It uses simple I/O operations (printf, scanf) for interaction and strcmp for authentication. 
-The bus lookup logic relies on iterating through arrays to match user input.
+The provided C program implements a simple Bus Reservation System that allows users to log in and manage bus ticket bookings.  The system supports user authentication, ticket booking, cancellation, and bus status inquiries.   How It Works: User Authentication:  Users must log in with predefined credentials stored in an array of User structures.  If login credentials match, the user gains access; otherwise, access is denied.  Bus Data Management:  Bus details (bus number, source, destination, total and available seats, fare) are stored in an array of Bus structures.  The system supports multiple buses with predefined data.  Main Features:  Booking a Ticket: Users can book tickets by entering a bus number and specifying the number of seats.  If enough seats are available, they are reserved.  Canceling a Ticket: Users can cancel previously booked tickets, ensuring they do not cancel more than they originally booked.  Checking Bus Status: Displays details such as the route, available seats, and fare of a selected bus.  Menu System:  The program operates through a looped menu system that presents different options depending on whether a user is logged in.  Users can book, cancel, check status, or log out. The program is structured using functions for modularity, making it easy to navigate and expand.  It uses simple I/O operations (printf, scanf) for interaction and strcmp for authentication.  The bus lookup logic relies on iterating through arrays to match user input.
