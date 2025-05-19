@@ -1,0 +1,2 @@
+This repository features a selection of C code projects which have been used to generate AI generated descriptions. Each folder contains a manually written reference description, an AI-generated description with comments and an AI-generated description without comments. 
+The Final results folder contains all the results of our project which can be read about in our thesis(link provided here once published)
