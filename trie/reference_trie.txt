@@ -1,9 +1,1 @@
-The associated files porvide an implementation of the trie data structure. The structure provides fast 
-from strings to values. The code features functionaly for creating and destroying tries, inserting and 
-removing values from the trie, looking up values and finding the number of entries. 
-trie.c implements these functions by allocating trie nodes as needed along each path of characters in 
-the key, incrementing a use_count so the code knows when a node is no longer referenced and can be freed. 
-This mechanism makes insertions, lookups, and removals work in a straightforward way, each character in the 
-key selects the correct branch of the tree, with ample space in each node’s next array for all possible byte 
-values (0–255). The trie keeps track of values (void pointers) directly within each node, 
-along with a sentinel constant (TRIE_NULL) to mark unused entries.
+The associated files porvide an implementation of the trie data structure. The structure provides fast  from strings to values. The code features functionaly for creating and destroying tries, inserting and  removing values from the trie, looking up values and finding the number of entries.  trie.c implements these functions by allocating trie nodes as needed along each path of characters in  the key, incrementing a use_count so the code knows when a node is no longer referenced and can be freed.  This mechanism makes insertions, lookups, and removals work in a straightforward way, each character in the  key selects the correct branch of the tree, with ample space in each node’s next array for all possible byte  values (0–255). The trie keeps track of values (void pointers) directly within each node,  along with a sentinel constant (TRIE_NULL) to mark unused entries.

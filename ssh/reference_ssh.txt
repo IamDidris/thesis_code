@@ -1,7 +1,1 @@
-The ssh folder contains code examples for establishing and handling SSH connections via the libssh library. 
-It includes a single header, chap11.h, which provides the necessary headers and definitions for calling libssh functions. 
-The ssh_connect.c file demonstrates how to connect to a remote SSH server, while ssh_auth.c extends this by 
-authenticating with a user-supplied password. The ssh_command.c file then shows how to execute a remote shell command once 
-the user is authenticated, and ssh_download.c focuses on downloading files over SSH using scp operations. Finally, ssh_version.c 
-provides functionality to print the installed libssh version, confirming that the library is available and accessible. Together, 
-these files illustrate basic SSH functionality for connecting, authenticating, running commands, and transferring files. 
+The ssh folder contains code examples for establishing and handling SSH connections via the libssh library.  It includes a single header, chap11.h, which provides the necessary headers and definitions for calling libssh functions.  The ssh_connect.c file demonstrates how to connect to a remote SSH server, while ssh_auth.c extends this by  authenticating with a user-supplied password. The ssh_command.c file then shows how to execute a remote shell command once  the user is authenticated, and ssh_download.c focuses on downloading files over SSH using scp operations. Finally, ssh_version.c  provides functionality to print the installed libssh version, confirming that the library is available and accessible. Together,  these files illustrate basic SSH functionality for connecting, authenticating, running commands, and transferring files. 

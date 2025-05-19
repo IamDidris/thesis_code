@@ -1,8 +1,1 @@
-The avl-tree.c file implements the AVL tree data structure.
-The AVL tree structure is a balanced binary tree which stores a collection of nodes . 
-Each node has a key and a value associated with it. The nodes are sorted within the tree based
-on the order of their keys. Modifications to the tree are constructed such that the tree remains
-balanced at all times, the height of two child subtrees will at most differ by one. 
-
- Balanced binary trees have several uses.  They can be used as a mapping 
- (searching for a value based on its key), or as a set of keys which is always ordered.
+The avl-tree.c file implements the AVL tree data structure. The AVL tree structure is a balanced binary tree which stores a collection of nodes .  Each node has a key and a value associated with it. The nodes are sorted within the tree based on the order of their keys. Modifications to the tree are constructed such that the tree remains balanced at all times, the height of two child subtrees will at most differ by one.    Balanced binary trees have several uses.  They can be used as a mapping   (searching for a value based on its key), or as a set of keys which is always ordered.

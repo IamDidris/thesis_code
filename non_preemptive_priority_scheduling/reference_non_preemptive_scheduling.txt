@@ -1,7 +1,1 @@
-This file implements a non preemptive scheduling algorithm. Processes are stored in a linked list
-where each node contains ID, arrival time, burst time, priority and calculated metrics such as 
-completion time, waiting time and turnaround time. The program provides methods to insert, update 
-or delete processes. During runtime, processes are selected based on arrival time, if multiple
-processes have the same arrival time, the one with the highest priority is selected. The process
-runs untill completion, then the next process is selected. The file also features a small test 
-case. 
+This file implements a non preemptive scheduling algorithm. Processes are stored in a linked list where each node contains ID, arrival time, burst time, priority and calculated metrics such as  completion time, waiting time and turnaround time. The program provides methods to insert, update  or delete processes. During runtime, processes are selected based on arrival time, if multiple processes have the same arrival time, the one with the highest priority is selected. The process runs untill completion, then the next process is selected. The file also features a small test  case. 

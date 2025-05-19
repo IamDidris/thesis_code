@@ -1,7 +1,1 @@
-The files attached implement the singly linked list data structure. The list stores a collection of 
-values, each entry in the list contains a link to the next entry in the list, therefore it is only
-possible to iterate over the list from top to bottom. The program features modules to create a new list,
-destroy and destroy a list. Additional functionality includes adding nodes to the head of the list, 
-adding nodes to the end of the list, searching the list for values, sort the list and printing the
-values of the list iterativly. The program is implemented utilizing the standard memory allocation
-like malloc & free, keeping the program lightweight. 
+The files attached implement the singly linked list data structure. The list stores a collection of  values, each entry in the list contains a link to the next entry in the list, therefore it is only possible to iterate over the list from top to bottom. The program features modules to create a new list, destroy and destroy a list. Additional functionality includes adding nodes to the head of the list,  adding nodes to the end of the list, searching the list for values, sort the list and printing the values of the list iterativly. The program is implemented utilizing the standard memory allocation like malloc & free, keeping the program lightweight. 

@@ -1,14 +1,1 @@
-The chap06.h file and web_get.c file provide a simple version 
-of a GET request written in C utilizing BSD sockets or 
-Winsock depending on the users platform. The header file 
-features definitions of socket types, macros and error-handling
-functions, making the file usable for both windows and unix
-based devices. The source code is a command-line program that
-receives a URL as argument and attempts to connect to the
-specified host, defaulting to port 80 if not specified. 
-The program attemps to resolve the hostname, create a socket 
-and establish a connection to the remote server. 
-After sending the request, the program waits for the data to arrive, 
-then prints it out if successfull.
-If the request times out or the connection closes, 
-the program displays an error message before exiting. 
+The chap06.h file and web_get.c file provide a simple version  of a GET request written in C utilizing BSD sockets or  Winsock depending on the users platform. The header file  features definitions of socket types, macros and error-handling functions, making the file usable for both windows and unix based devices. The source code is a command-line program that receives a URL as argument and attempts to connect to the specified host, defaulting to port 80 if not specified.  The program attemps to resolve the hostname, create a socket  and establish a connection to the remote server.  After sending the request, the program waits for the data to arrive,  then prints it out if successfull. If the request times out or the connection closes,  the program displays an error message before exiting. 
